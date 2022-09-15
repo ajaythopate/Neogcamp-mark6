@@ -1,0 +1,115 @@
+body{
+  width: 99.99vw;
+  margin: 0px;
+}
+h2{
+    font-size: 36px;
+    height: 20vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 99.99vw;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    background-color: rgba(116, 93, 248, 0.795);
+    border-radius:  1rem;
+  }
+  
+  h2 div{
+    transform: translate(0,6vh);
+    transition: 3s height linear;
+  }
+  .middle-container{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 20vh 0px 0px 0px;
+    height: 60vh;
+    width: 99.99vw;
+    box-sizing: content-box;
+  }
+  .middle-container input{
+    border: 1px solid gray;
+    width: 50vw;
+    height: 15vh;
+    margin-top: 5vh;
+    transform: translate(25vw,0px);
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: black 3px 3px 5px;
+
+    
+  }
+  /*.middle-container input:hover{
+    
+    transform: translate(25vw,0px);
+    transition-duration: 2s;
+  
+    
+  }*/
+  .middle-container button{
+   
+    margin: 2.5vh 0px;
+    width: 10vw;
+    height: 10vh;
+    transform: translate(25vw,0px);
+    background-color: rgba(248, 204, 93, 0.74);
+    font-size: 21px;
+    box-shadow: black 5px 5px 5px;
+    transition: 3s, width , linear;
+    
+  }/*
+  .middle-container button:hover{
+    transition-duration: 1s;
+    width: 30%;
+    transition-timing-function: linear;
+  }*/
+  .submit{
+    cursor: pointer;
+  }
+  .three{
+  
+    height: 5vh;
+    width: 20vw;
+    transform: translate(124%,0px);
+    font-size: 14px;
+    
+  }
+  .four{
+    border: 1px solid gray;
+    height: 15vh;
+    width: 50vw;
+    transform: translate(25vw,0px);
+    font-size: 16px;
+    border: 2px solid black;
+    box-shadow: black 3px 3px 5px;
+
+
+  }
+  footer{
+    width: 99.99vw;
+    height: 20vh;
+    background-color: rgb(248, 204, 93);
+    border-top: 1rem;
+    border-radius: 1rem;
+  }
+  footer div{
+    text-align: center;
+    width: 50vw;
+    transform: translateX(25vw);
+  }
+  .about{
+    position: absolute;
+    left: 0px;
+    width: 99.99vw;
+  }
+  .about1{
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .about2{
+    width: 40%;
+    transform: translateX(30vw);
+    font-family: cursive;
+    font-size: 15px;}
+.error{
+  background-image: linear-gradient(to bottom, red, white 100%);
+}
