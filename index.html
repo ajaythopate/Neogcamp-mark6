@@ -1,37 +1,42 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width , initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <title>Banana Talk</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png" style="height:16px; width:16px;" >
-    </head>
-    <body>
-        <div class="parentContainer">
-        <h2 class="banana-talk"><div>Banana talk</div></h2>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana speak</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <h1>Banana Speak</h1>
+    </nav>
+    <main>
+      <textarea
+        id="txt-input"
+        placeholder="Enter your text here we will translate it to emoji language"
+      ></textarea>
+      <br />
+      <br />
+      <button id="btn-translate">Translate</button>
+      <br />
+      <br />
 
-   <div class="middle-container">
-    <div>
-      <input class="one" id="123" type="Text" placeholder="Enter the text"></input>
-    </div>
-    <div class="two"><button class="two" type="submit" onClick={translator()}>Translate To Banana</button></div>
-    
-    <div class="three">Your translated text can be viewed below:</div>
-    <div class="four" id="456"></div>
-    </div>
-    
+      <br />
+      <div class="output"></div>
+    </main>
 
-     <footer class="about">
-      <div class="about1">About</div><br/>
-     <div class="about2">Are you a fan of minions? Did you know that the gibberish they say is an actual language. 
-     Use the translator to convert your text from English to Minion speak or Banana language.
-     </div>
-     </footer>
-    </div>
-    </body>
-    <script src="app.js"></script>
+    <footer class="foot">
+      <h1>ABOUT</h1>
+
+      <p>
+        Most of you heard about Star Trek.
+        <br />
+        here is a fun translation web aap which convert English into Banana
+      </p>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
 </html>
