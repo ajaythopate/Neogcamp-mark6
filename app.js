@@ -1,6 +1,7 @@
 var inputxt = document.querySelector("#txt-input");
 var translatebtn = document.querySelector("#btn-translate");
 var outputxt = document.querySelector(".output");
+var errMsg = document.querySelector("#errorMsg");
 
 var url = "https://api.funtranslations.com/translate/minion.json"
 
@@ -15,12 +16,18 @@ function errorhandler(error) {
 }
 function clickresponse() {
     var answer = inputxt.value;
-    fetch(geturl(answer))
-        .then(response => response.json())
-        .then(json => {
-            outputxt.innerText = json.contents.translated;
+    if (answer === "") {
+        errMsg.innerText = "Field can not be empty.";
+    } else {
+        fetch(geturl(answer))
+            .then(response => response.json())
+            .then(json => {
+                errMsg.innerText = "";
+                outputxt.innerText = json.contents.translated;
+                inputxt.value = "";
 
-        })
-        .catch(errorhandler)
+            })
+            .catch(errorhandler)
+    }
 };
 translatebtn.addEventListener("click", clickresponse)
